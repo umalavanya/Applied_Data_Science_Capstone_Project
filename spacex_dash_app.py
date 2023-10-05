@@ -25,7 +25,10 @@ app.layout = html.Div(children=[
     dcc.Dropdown(id='site-dropdown',
                  options=[
                      {'label': 'All Sites', 'value': 'ALL'},
-                     {'label': site, 'value': site} for site in unique_launch_sites
+                     {'label': unique_launch_sites[0], 'value': unique_launch_sites[0]},
+                     {'label': unique_launch_sites[1], 'value': unique_launch_sites[1]},
+                     {'label': unique_launch_sites[2], 'value': unique_launch_sites[2]},
+                     {'label': unique_launch_sites[3], 'value': unique_launch_sites[3]},
                  ],
                  value='ALL',
                  placeholder="Select a Launch Site",
